@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&display=swap');
+
+@font-face {
+    font-family: 'ttg';
+    src: url('icons/static/ttg_by_westralinc-dbnnkt8.ttf') format('truetype');
+    /* Adicione outros formatos, se necessário */
+    font-weight: 400;
+    font-style: normal;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+/* Estilo básico dos botões de opção */
+#robo {
+    display: inline-block;
+    padding: 8px 45px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color:  #353333;
+    border: 1px solid #263F99;
+
+    display: inline-block;
+
+    font-family: 'Bitter';
+    font-style: normal;
+    font-weight: 540;
+    font-size: 16px;
+    line-height: 19px;
+    margin-right: 10px;
+
+    color:#FFFFFF;
+
+    transition: 0.5s ease-in;;
+}
+
+#bruxa {
+    display: inline-block;
+    padding: 8px 28px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background:  #353333;
+    border: 1px solid #b659ec;;
+
+    display: inline-block;
+
+    font-family: 'Bitter';
+    font-style: normal;
+    font-weight: 540;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+
+    transition: 0.5s ease-in;
+
+    
+}
+
+#burro {
+    display: inline-block;
+    padding: 8px 31.5px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background:  #353333;
+    border: 1px solid #E41F1F;
+
+    display: inline-block;
+
+    font-family: 'Bitter';
+    font-style: normal;
+    font-weight: 540;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+
+    transition: 0.5s ease-in;
+}
+
+#estrela {
+    display: inline-block;
+    padding: 8px 46.5px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background: #353333;
+    border: 1px solid #d82750;
+
+    display: inline-block;
+
+    font-family: 'Bitter';
+    font-style: normal;
+    font-weight: 540;
+    font-size: 16px;
+    line-height: 19px;
+    margin-right: 10px;
+
+    color: #FFFFFF;
+
+    transition: 0.5s ease-in;
+}
+
+#animal {
+    display: inline-block;
+    padding: 8px 49.5px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background: #353333;
+    border: 1px solid #28b323;
+
+    display: inline-block;
+
+    font-family: 'Bitter';
+    font-style: normal;
+    font-weight: 540;
+    font-size: 16px;
+    line-height: 19px;
+
+    color:#FFFFFF;
+
+    transition: 0.5s ease-in;
+
+}
+
+
+
+/* Estilo para realçar o botão selecionado */
+#opcao1:checked+label {
+    background: linear-gradient(94.6deg, #0a60e1 5%, rgb(25, 47, 105) 96.56%);
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    
+    transform:scale(1.05,1.05);
+
+    box-shadow: inset -10.5em 0 0 0 rgb(25, 47, 105), inset 10.5em 0 0 0  #0a60e1;
+}
+
+#opcao2:checked+label {
+    background: linear-gradient(94.02deg, #7c42ab 3.66%, rgb(50, 23, 94) 94.32%);
+    border: 1px solid #ffffff;
+    color: #ffffff;
+
+    transform:scale(1.05,1.05);
+
+    box-shadow: inset -10.5em 0 0 0 rgb(82, 49, 136), inset 10.5em 0 0 0  #7c42ab;
+
+}
+
+#opcao3:checked+label {
+    background: linear-gradient(93.65deg, #E0221B 4.79%, #7c2520 100%); 
+    border: 1px solid #ffffff;
+    color: #ffffff;
+
+    transform:scale(1.05,1.05);
+
+    box-shadow: inset -11.5em 0 0 0 #b92f27, inset 10.5em 0 0 0  #E0221B;
+    
+}
+
+#opcao4:checked+label {
+    background: linear-gradient(93.84deg, #a72241 32.17%, rgb(104, 26, 55) 96.83%);
+    border: 1px solid #ffffff;
+    color: #ffffff;
+
+    transform:scale(1.05,1.05);
+
+    box-shadow: inset -10.5em 0 0 0#a72241, inset 10.5em 0 0 0   rgb(104, 26, 55);
+
+}
+
+#opcao5:checked+label {
+    background: linear-gradient(93.8deg, #32881d 5.26%, rgb(35, 98, 19) 100%);
+    border: 1px solid #ffffff;
+    color: #ffffff;
+
+    transform:scale(1.05,1.05);
+
+    box-shadow: inset -10.5em 0 0 0 rgb(35, 98, 19), inset 10.5em 0 0 0  #32881d;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: #111010;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logomain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+img {
+    width: 154px;
+    height: 160px;
+    margin-top: 30px;
+}
+
+p {
+    color: white;
+    font-family: 'Bitter', serif;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 28px;
+}
+
+.nomes {
+
+    font-family: 'Bitter';
+    font-style: normal;
+    font-weight: 540;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+
+}
+
+#enter {
+    /* Rectangle 6 */
+    width: 170px;
+    height: 50px;    
+    border-radius: 32px;
+
+
+    margin-top: 45px;
+
+    font-family: 'Bitter';
+    font-style: normal;
+    font-size: 20px;
+
+
+    color: #141212;
+}
+
+
+#myForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 47px;
+}
+
+#cybrav {
+    margin-bottom: 17px;
+}
+
+#estmut {
+    margin-top: 17px;
+}
+
+
+
+
+

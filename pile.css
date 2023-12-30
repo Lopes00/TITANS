@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&display=swap');
+
+@font-face {
+    font-family: 'TTG';
+    src: url('icons/static/ttg_by_westralinc-dbnnkt8.ttf') format('truetype');
+    /* Adicione outros formatos, se necessário */
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #111010;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main {
+    margin-top: 2%;
+}
+
+.primeiro {
+    /* Rectangle 7 */
+
+    width: 330px;
+    height: 80px;
+    margin-bottom: auto;
+
+    
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#primeirogui{
+    background: #CE121D;
+}
+
+#primeirothay{
+    background: #0B4C78;
+}
+
+#primeiromalu{
+    background: #240D55;
+}
+
+#primeirogi{
+    background: #8A1B50;
+}
+
+#primeiropedro{
+    background: #095814;
+}
+
+
+.segundo {
+    /* Rectangle 8 */
+
+    width: 330px;
+    height: 550px;
+
+
+    background: #D8D0D0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.linha {
+    width: 330px;
+    height: 3px;
+}
+
+#linhagui{
+    background-color: #046E46;
+}
+
+#linhathay{
+    background-color: #969CA1;
+}
+
+#linhagi{
+    background-color: #004D18;
+}   
+
+#linhamalu{
+    background-color: #BCB385;
+}
+
+#linhapedro{
+    background-color: #860D71;
+}
+
+h1 {
+    margin: 0;
+    justify-content: center;
+}
+
+.bemvindo {
+    /* Seja bem-vindo */
+
+    width: 153px;
+    height: 31px;
+    margin-left: 9px;
+    margin-top: 20px;
+
+    font-family: 'TTG';
+    font-style: normal;
+
+    font-size: 27px;
+
+
+    color: #010101;
+
+
+}
+
+.nome {
+
+   
+    height: 31px;
+
+
+    font-family: 'TTG';
+    font-style: normal;
+
+    font-size: 27px;
+
+}
+
+#nomegui{
+    color: #E41925;
+}
+
+#nomethay{
+    color: #0B4C78;
+}
+
+#nomemalu{
+    color: #240D55;
+}
+
+#nomegi{
+    color: #BB216B;
+}
+
+#nomepedro{
+    color: #1A7043;
+}
+
+
+
+
+
+img {
+    width: 75px;
+    height: 75px;
+
+}
+
+p {
+
+    width: 287px;
+    font-family: 'Bitter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #070707;
+
+
+}
+
+h2 {
+    width: 287px;
+    margin: 25 0 4 0;
+}
+
+ul {
+    width: 287px;
+  
+}
+
+li {
+    font-family: 'Bitter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #070707;
+
+
+
+}
+
+.pixel{
+    scale: 2.2;
+    width: 120px;
+
+}
