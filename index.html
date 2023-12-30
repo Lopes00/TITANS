@@ -20,7 +20,7 @@
     </div>
 
   
-    <form  id="myForm" action="titans.php" method="post" enctype="multipart/form-data">
+    <form  id="myForm">
 
     <div id="cybrav">
         <input type="radio" id="opcao1" name="opcoes" value="thay" />
@@ -43,11 +43,24 @@
     </div>
 
 
-    <button type="submit" id="enter"><strong class="entrar">Entrar</strong></button>
+    <button type="button" id="enter" onclick="redirect()"><strong class="entrar">Entrar</strong></button>
 
   </form>
 
+  <script>
+        function redirect() {
+            var form = document.getElementById('myForm');
+            var selectedOption = form.querySelector('input[name="opcoes"]:checked');
 
+            if (selectedOption) {
+                var destination = selectedOption.value;
+                console.log(destination);
+                window.location.href = destination + '.html'; // Substitua '.php' pelo formato da sua página
+            } else {
+                alert('Por favor, selecione uma opção.');
+            }
+        }
+    </script>
 
 
 </body>
