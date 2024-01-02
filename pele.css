@@ -17,7 +17,7 @@ body {
 }
 
 main {
-    margin-top: 2%;
+    margin-top: 5%;
 }
 
 .primeiro {
@@ -162,7 +162,7 @@ h1 {
 
 
 
-img {
+.logo {
     width: 75px;
     height: 75px;
 
@@ -208,5 +208,6 @@ li {
 .pixel{
     scale: 2.2;
     width: 120px;
+    margin-top: 20px;
 
 }

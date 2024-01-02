@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TeenTitans</title>
-    <link rel="stylesheet" href="comeco.css">
+    <link rel="stylesheet" href="men.css">
     <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet'>
+    <link rel="stylesheet" href="lola.css">
     <link rel="icon" href="icons/teenTitans-favicon.png">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&display=swap');
     </style>
 </head>
 
-<body>
+<body class="bodyprincipal">
+    <main id="tudo">
     <div class="logomain">
-        <img src="icons/TeenTitansTitle.png"> 
+        <img class="menu" src="icons/TeenTitansTitle.png"> 
         <p><strong>Quem está aí?</strong></p>
     </div>
 
@@ -46,6 +48,38 @@
     <button type="button" id="enter" onclick="redirect()"><strong class="entrar">Entrar</strong></button>
 
   </form>
+</main>
+
+  <div id="loader">
+    <div id="divdoload">
+         <div id="spinner">
+             <img class="tes" src="icons/simboloT.png"/>
+         </div>
+    </div>
+</div>
+
+    <script>
+        document.onreadystatechange = function () {
+            if (document.readyState === "complete") {
+                // Quando a página estiver completamente carregada, oculte a tela de carregamento
+            
+            } else {
+                var mainContent= document.getElementById('tudo')
+
+                mainContent.classList.add('hidden');
+                // Quando a página estiver carregando, exiba a tela de carregamento
+                document.getElementById("loader").style.display = "flex";
+
+                // Simular atraso de 3 segundos (3000 milissegundos)
+                setTimeout(function () {
+                    // Após o atraso, oculte a tela de carregamento
+                    document.getElementById("loader").style.display = "none";
+                    mainContent.style.display = 'block';
+                }, 1000);
+            }
+        };
+    </script>
+
 
   <script>
         function redirect() {

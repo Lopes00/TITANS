@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&display=swap');
 
 @font-face {
@@ -206,7 +211,7 @@ body {
     flex-direction: column;
 }
 
-img {
+.menu {
     width: 154px;
     height: 160px;
     margin-top: 30px;
@@ -266,7 +271,23 @@ p {
     margin-top: 17px;
 }
 
+.bodyprincipal{
+    opacity: 1;
+    animation: fadeIn 3s ease-out;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+
+    }
+    to{
+        opacity:1;
+    }
+}
 
 
-
+main{
+    margin-top: 20px;
+}
 
