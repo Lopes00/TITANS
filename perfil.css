@@ -27,8 +27,6 @@ main {
     height: 80px;
     margin-bottom: auto;
 
-    
-
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 
@@ -205,9 +203,30 @@ li {
 
 }
 
-.pixel{
-    scale: 2.2;
+.pixelciborgue{
+        width: 120px;
+        margin-right: 20px;
+        margin-top: 20px;
+}
+
+.pixelestelar{
+    width: 120px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.pixelraven{
+    width: 120px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.pixelrobin{
     width: 120px;
     margin-top: 20px;
+}
 
+.pixelmutano{
+    width: 120px;
+    margin-top: 20px;
 }
