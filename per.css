@@ -17,7 +17,7 @@ body {
 }
 
 main {
-    margin-top: 5%;
+   position:absolute;
 }
 
 .primeiro {
@@ -199,8 +199,6 @@ li {
 
     color: #070707;
 
-
-
 }
 
 .pixelciborgue{
@@ -229,4 +227,16 @@ li {
 .pixelmutano{
     width: 120px;
     margin-top: 20px;
+}
+
+#ciborguelogo{
+    width: 95px;
+    height: 95px;
+    position: relative;
+}
+
+#mutanologo{
+    position: relative;
+    width: 90px;
+    height: 90px;
 }

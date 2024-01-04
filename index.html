@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TeenTitans</title>
-    <link rel="stylesheet" href="menuu.css">
+    <link rel="stylesheet" href="mena.css">
     <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet'>
     <link rel="stylesheet" href="lola.css">
     <link rel="icon" href="icons/teenTitans-favicon.png">
@@ -19,12 +19,13 @@
     <div class="logomain">
         <img class="menu" src="icons/TeenTitansTitle.png"> 
         <p><strong>Quem está aí?</strong></p>
-        
-            <img  class="emote" id="estelaremote" src="icons/estelaremote.png" alt="estelaremote">
-            <img class="emote" id="ciborgueemote" src="icons/ciborgueemote.png" alt="ciborgueemote">
-            <img class="emote" id="robinemote" src="icons/robinemote.png" alt="robinemote">
-            <img class="emote" id="ravenemote" src="icons/ravenemote.png" alt="ravenemote">
-            <img class="emote" id="mutanoemote" src="icons/mutanoemote.png" alt="mutanoemote">
+            <div class="figurinhas">
+            <img class="emote" id="emote1" src="icons/ciborgueemote.png" alt="ciborgueemote">
+            <img class="emote" id="emote2" src="icons/ravenemote.png" alt="ravenemote">
+            <img class="emote" id="emote3" src="icons/robinemote.png" alt="robinemote">
+            <img  class="emote"  id="emote4" src="icons/estelaremote.png" alt="estelaremote">
+            <img class="emote" id="emote5" src="icons/mutanoemote.png" alt="mutanoemote">
+         </div>
     
     </div>
 
@@ -32,24 +33,26 @@
     <form  id="myForm">
 
     <div id="cybrav">
-        <input type="radio" id="opcao1" name="opcoes" value="thay" />
+        <input type="radio" id="opcao1" name="opcoes" value="thay" onclick="anima(1)" />
         <label id="robo" for="opcao1">Thaysa</label>
 
-        <input type="radio" id="opcao2" name="opcoes" value="maria"/>
+        <input type="radio" id="opcao2" name="opcoes" value="maria" onclick="anima(2)"/>
         <label id="bruxa" for="opcao2">Maria Luísa</label>
         
     </div>
 
-    <input type="radio" id="opcao3" name="opcoes" value="gui"/>
+    <input type="radio" id="opcao3" name="opcoes" value="gui" onclick="anima(3)"/>
     <label id="burro" for="opcao3">Guilherme</label>
 
     <div id="estmut">
-        <input type="radio" id="opcao4" name="opcoes" value="gi" />
+        <input type="radio" id="opcao4" name="opcoes" value="gi" onclick="anima(4)" />
         <label id="estrela" for="opcao4">Giselle</label>
 
-        <input type="radio" id="opcao5" name="opcoes" value="ph"/>
+        <input type="radio" id="opcao5" name="opcoes" value="ph" onclick="anima(5)"/>
         <label id="animal" for="opcao5">Pedro</label>
     </div>
+
+    
 
 
     <button type="button" id="enter" onclick="redirect()"><strong class="entrar">Entrar</strong></button>
@@ -64,6 +67,22 @@
          </div>
     </div>
 </div>
+
+    <script>
+        function anima(option) {
+            // Remover a classe 'boneco' de todos os ícones
+            const emotes = document.querySelectorAll('.emote');
+            emotes.forEach(emote => {
+            emote.classList.remove('boneco');
+            });
+
+            // Adicionar a classe 'selected-icon' ao ícone correspondente à opção selecionada
+            const selectedIcon = document.getElementById(`emote${option}`);
+            selectedIcon.classList.add('boneco');
+         }
+
+    </script>
+
 
     <script>
         document.onreadystatechange = function () {
