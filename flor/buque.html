@@ -1,18 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="flores.css">
-    <title>Flores</title>
+    <title>CSS Blossoming Flowers at Magical Night</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<!--  
- 
-  CSS Blossoming Flowers at Magical Night.
-  I've taken some inspiration by Yup Nguyen's Artwork: https://dribbble.com/shots/11096994-Virtual-Garden.
-  Made with Pure CSS & ♥
--->
-
+<body>
+   
 <body class="not-loaded">
     <div class="night"></div>
     <div class="flowers">
@@ -313,14 +308,8 @@
     </div>
   </body>
 
-  <script>
-    
-    onload = () => {
-    const c = setTimeout(() => {
-        document.body.classList.remove("not-loaded");
-        clearTimeout(c);
-    }, 1000);
-    };
 
-  </script>
+    <!-- Javascript here -->
+<script src="script.js"></script>
+</body>
 </html>
