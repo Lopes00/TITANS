@@ -10,31 +10,76 @@
     <link rel="icon" href="icons/teenTitans-favicon.png">
 </head>
 <body>
-    <main class="hidden">
-        <section class= "primeiro" id="primeirogi">
-            <img class="logo" id="estelarlogo" src="icons/EstelarLogo.png">
-        </section>
-        <div class="linha" id="linhagi">
-        </div>
-        <section class="segundo">
-            <h1 class="bemvindo">SEJA BEM VINDA</h1>
-            <h1 class="nome" id="nomegi">GISELLE</h1>
-            <p>Um espírito de liderança capaz de garantir a segurança e bom humor da equipe .
-            <h2>Habilidades</h2>
-            <ul>
+    <main class=" hidden flip-card">
+        <div class="flip-card-inner">
+
+          <div class="flip-card-front">
+            <section class= "primeiro" id="primeirogi">
+                <img class="logo" id="estelarlogo" src="icons/EstelarLogo.png">
+            </section>
+            <div class="linha" id="linhagi">
+            </div>
+            <section class="segundo">
+                <div class="topo">
+                    <button href="#" class="back-button" onclick="history.back()"><img src="icons/retorna.png" alt="Voltar" id="voltar"></button>
+                </div>
+                <h1 class="bemvindo">SEJA BEM VINDA</h1>
+                <h1 class="nome" id="nomegi">GISELLE</h1>
+                <p>
+                <h2>Físico:</h2>
+                <ul>
+                    <li>16 anos;</li>
+                    <li>Tenho olhos castanhos;</li>
+                    <li>1,63 de altura;</li>
+                    <li>Cabelos castanhos<br> e cacheados.</li>
+                </ul>
+                <h2>Habilidades:</h2>
+                <ul>
+                    <li>Tenho a facilidade de escrever o que sinto, independente de qual seja a situação, a minha escrita é a minha arma, me entregue uma caneta e eu farei a minha mágica.</li>
+                    <li>Consigo ler as pessoas e isso costuma me ajudar ou me desgastar.</li>
+
+                </ul>
                 
-                <li>Inteligente</li>
-                <li>Forte</li>
-                <li>Carismático</li>
-                <li>Tranquilo</li>
-                <li>ágil</li>
-            </ul>
-            <a href="#" class="back-button" onclick="history.back()">Voltar</a>
-            </p>
+                
+                </p>
+                <button class="flip-button" onclick="flipCard()" id="msgi">Mensagens</button>
+                <img class="pixelestelar" src="icons/pixelestelar.gif" alt="pixel-art-titans">
+    
+            </section>
+          </div>
 
-            <img class="pixelestelar" src="icons/pixelestelar.gif" alt="pixel-art-titans">
+          <div class="flip-card-back">
+            <section class= "primeiro" id="primeirogui">
+                <img class="logo" id="robinlogo" src="icons/RobinLogo.png">
+            </section>
+            <div class="linha" id="linhagui">
+            </div>
+            <section class="segundo">
+                <h1 class="bemvindo">SEJA BEM VINDO</h1>
+                <h1 class="nome" id="nomegui">GUILHERME</h1>
+                <p>Um espírito de liderança capaz de garantir a segurança e bom humor da equipe .
+                <h2>Habilidades</h2>
+                <ul>
+                    
+                    <li>Inteligente</li>
+                    <li>Forte</li>
+                    <li>Carismático</li>
+                    <li>Tranquilo</li>
+                    <li>ágil</li>
+                </ul>
+                <div class="topo">
+                <a href="#" class="back-button" onclick="history.back()">Voltar</a>
+                <button class="flip-button" onclick="flipCard()">Flip Card</button>
+                </div>
+                </p>
+    
+                <img  class="pixelrobin" src="icons/pixelrobin.gif" alt="pixel-art-titans">
+    
+            </section>
+          </div>
+          
 
-        </section>
+        </div>
     </main>
 
     <div id="loader">
@@ -44,6 +89,13 @@
              </div>
         </div>
     </div>
+
+    <script>
+        function flipCard() {
+          var card = document.querySelector('.flip-card');
+          card.classList.toggle('flipped');
+        }
+    </script>
 
     <script>
         // Função para ocultar a tela de carregamento e exibir a página principal após 3 segundos

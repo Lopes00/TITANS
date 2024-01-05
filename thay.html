@@ -9,31 +9,73 @@
     <link rel="icon" href="icons/teenTitans-favicon.png">
 </head>
 <body>
-    <main class="hidden">
-        <section class= "primeiro" id="primeirothay">
-            <img class="logo" id="ciborguelogo" src="icons/CiborgueLogo.png">
-        </section>
-        <div class="linha" id="linhathay">
+    <main class=" hidden flip-card">
+        <div class="flip-card-inner">
+
+          <div class="flip-card-front">
+            <section class= "primeiro" id="primeirothay">
+                <img class="logo" id="ciborguelogo" src="icons/CiborgueLogo.png">
+            </section>
+            <div class="linha" id="linhathay">
+            </div>
+            <section class="segundo">
+                <div class="topo">
+                    <button href="#" class="back-button" onclick="history.back()"><img src="icons/retorna.png" alt="Voltar" id="voltar"></button>
+                </div>
+                <h1 class="bemvindo">SEJA BEM VINDA</h1>
+                <h1 class="nome" id="nomethay">THAY🎊</h1>
+                <p>
+                <h2>Físico:</h2>
+                <ul>
+                    <li>17 anos;</li>
+                    <li>1,64 de altura;</li>
+                    <li>Cabelo castanho escuro<br> com mechas loiras atrás<br> e cacheado;</li>
+                    <li>Olhos castanhos escuro;</li>
+                    <li>Uso aparelho.</li>
+                </ul>
+                <h2>Habilidades:</h2>
+                <ul>
+                    <li>Tenho facilidade pra conversar, puxar assunto com pessoas novas e ser uma boa ouvinte. <br> Também tenho uma criatividade bastante fértil.</li>
+                </ul>
+                </p>
+
+                <button class="flip-button" onclick="flipCard()" id="msgt" >Mensagens</button>
+            
+                <img  class="pixelciborgue" src="icons/pixelciborgue.gif" alt="pixel-art-titans">
+            
+            </section>
+          </div>
+
+          <div class="flip-card-back">
+            <section class= "primeiro" id="primeirogui">
+               
+            </section>
+            <div class="linha" id="linhagui">
+            </div>
+            <section class="segundo">
+                <h1 class="bemvindo">SEJA BEM VINDO</h1>
+                <h1 class="nome" id="nomegui">GUILHERME</h1>
+                <p>Um espírito de liderança capaz de garantir a segurança e bom humor da equipe .
+                <h2>Habilidades</h2>
+                <ul>
+                    
+                    <li>Inteligente</li>
+                    <li>Forte</li>
+                    <li>Carismático</li>
+                    <li>Tranquilo</li>
+                    <li>ágil</li>
+                </ul>
+                <a href="#" class="back-button" onclick="history.back()">Voltar</a>
+                <button class="flip-button" onclick="flipCard()">Flip Card</button>
+                </p>
+    
+                <img  class="pixelrobin" src="icons/pixelrobin.gif" alt="pixel-art-titans">
+    
+            </section>
+          </div>
+          
+
         </div>
-        <section class="segundo">
-            <h1 class="bemvindo">SEJA BEM VINDA</h1>
-            <h1 class="nome" id="nomethay">THAYSA</h1>
-            <p>Um espírito de liderança capaz de garantir a segurança e bom humor da equipe .
-            <h2>Habilidades</h2>
-            <ul>
-                
-                <li>Inteligente</li>
-                <li>Forte</li>
-                <li>Carismático</li>
-                <li>Tranquilo</li>
-                <li>ágil</li>
-            </ul>
-            <a href="#" class="back-button" onclick="history.back()">Voltar</a>
-            </p>
-
-            <img  class="pixelciborgue" src="icons/pixelciborgue.gif" alt="pixel-art-titans">
-
-        </section>
     </main>
     
     <div id="loader">
@@ -43,6 +85,13 @@
              </div>
         </div>
     </div>
+
+    <script>
+        function flipCard() {
+          var card = document.querySelector('.flip-card');
+          card.classList.toggle('flipped');
+        }
+    </script>
 
     <script>
         // Função para ocultar a tela de carregamento e exibir a página principal após 3 segundos

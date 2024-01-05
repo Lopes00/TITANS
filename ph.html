@@ -10,34 +10,79 @@
     <link rel="icon" href="icons/teenTitans-favicon.png">
 </head>
 <body>
-    <main class="hidden">
-        <section class= "primeiro" id="primeiropedro">
-            <img class="logo" id="mutanologo" src="icons/MutanoLogo.png">
-        </section>
-        <div class="linha" id="linhapedro">
+    <main class=" hidden flip-card">
+        <div class="flip-card-inner">
+
+          <div class="flip-card-front">
+            <section class= "primeiro" id="primeiropedro">
+                <img class="logo" id="mutanologo" src="icons/MutanoLogo.png">
+            </section>
+            <div class="linha" id="linhapedro">
+            </div>
+            <section class="segundo">
+                <div class="topo">
+                    <button href="#" class="back-button" onclick="history.back()"><img src="icons/retorna.png" alt="Voltar" id="voltar"></button>
+                </div>
+                <h1 class="bemvindo">SEJA BEM VINDO</h1>
+                <h1 class="nome" id="nomepedro">PH 💬</h1>
+                <p>
+                <h2>Físico:</h2>
+                <ul>
+                    <li>17 anos;</li>
+                    <li>1,75 eu acho;</li>
+                    <li>Cabelo cacheado;</li>
+                    <li>Olhos castanhos;</li>
+                    <li>Aparelho no dente;</li>
+                    <li>Carismático.</li>
+                </ul>                
+                <h2>Habilidades:</h2>
+                <ul>
+                    <li>Sociável.</li>
+                </ul>   
+
+                </p>
+
+                <button class="flip-button" onclick="flipCard()">Mensagens</button>
+    
+                <img  class="pixelmutano" src="icons/pixelmutano.gif" alt="pixel-art-titans">
+    
+            </section>
+          </div>
+
+          <div class="flip-card-back">
+            <section class= "primeiro" id="primeirogui">
+                <img class="logo" id="robinlogo" src="icons/RobinLogo.png">
+            </section>
+            <div class="linha" id="linhagui">
+            </div>
+            <section class="segundo">
+                <div class="topo">
+                    <a href="#" class="back-button" onclick="history.back()">Voltar</a>
+                    <button class="flip-button" onclick="flipCard()">Flip Card</button>
+                </div>
+                <h1 class="bemvindo">SEJA BEM VINDO</h1>
+                <h1 class="nome" id="nomegui">GUILHERME</h1>
+                <p>Um espírito de liderança capaz de garantir a segurança e bom humor da equipe .
+                <h2>Habilidades</h2>
+                <ul>
+                    
+                    <li>Inteligente</li>
+                    <li>Forte</li>
+                    <li>Carismático</li>
+                    <li>Tranquilo</li>
+                    <li>ágil</li>
+                </ul>
+                </p>
+    
+                <img  class="pixelrobin" src="icons/pixelrobin.gif" alt="pixel-art-titans">
+    
+            </section>
+          </div>
+          
         </div>
-        <section class="segundo">
-            <h1 class="bemvindo">SEJA BEM VINDO</h1>
-            <h1 class="nome" id="nomepedro">PEDRO</h1>
-            <p>Um espírito de liderança capaz de garantir a segurança e bom humor da equipe .
-            <h2>Habilidades</h2>
-            <ul>
-                
-                <li>Inteligente</li>
-                <li>Forte</li>
-                <li>Carismático</li>
-                <li>Tranquilo</li>
-                <li>ágil</li>
-            </ul>
-
-            <a href="#" class="back-button" onclick="history.back()">Voltar</a>
-            <a href="flor/buque.html">FLORES</a>
-            </p>
-
-            <img  class="pixelmutano" src="icons/pixelmutano.gif" alt="pixel-art-titans">
-
-        </section>
     </main>
+
+
 
     <div id="loader">
         <div id="divdoload">
@@ -46,6 +91,13 @@
              </div>
         </div>
     </div>
+
+    <script>
+        function flipCard() {
+          var card = document.querySelector('.flip-card');
+          card.classList.toggle('flipped');
+        }
+    </script>
 
     <script>
         // Função para ocultar a tela de carregamento e exibir a página principal após 3 segundos

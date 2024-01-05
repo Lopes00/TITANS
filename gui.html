@@ -11,31 +11,73 @@
     <link rel="icon" href="icons/teenTitans-favicon.png">
 </head>
 <body class="perfil">
-    <main class="hidden">
-        <section class= "primeiro" id="primeirogui">
-            <img class="logo" id="ravenlogo" src="icons/RobinLogo.png">
-        </section>
-        <div class="linha" id="linhagui">
-        </div>
-        <section class="segundo">
-            <h1 class="bemvindo">SEJA BEM VINDO</h1>
-            <h1 class="nome" id="nomegui">GUILHERME</h1>
-            <p>Um espírito de liderança capaz de garantir a segurança e bom humor da equipe .
-            <h2>Habilidades</h2>
-            <ul>
+    <main class=" hidden flip-card">
+        <div class="flip-card-inner">
+
+          <div class="flip-card-front">
+            <section class= "primeiro" id="primeirogui">
+                <img class="logo" id="robinlogo" src="icons/RobinLogo.png">
+            </section>
+            <div class="linha" id="linhagui">
+            </div>
+            <section class="segundo">
+                <div class="topo">
+                    <button href="#" class="back-button" onclick="history.back()"><img src="icons/retorna.png" alt="Voltar" id="voltar"></button>
+                </div>
+                <h1 class="bemvindo">SEJA BEM VINDO</h1>
+                <h1 class="nome" id="nomegui">GUI✋🏻😝🤚🏻</h1>
+                <p>
+                <h2>Físico:</h2>
+                <ul>
+                    <li>Jovem de 16 anos;</li>
+                    <li>1,86m de altura;</li>
+                    <li>Negro;</li>
+                    <li>Cabelo cacheado;</li>
+                    <li>Olhos castanhos escuro.</li>
+                </ul>
+                <h2>Habilidades:</h2>
+                <ul>
+                    <li>Adquiro conhecimento muito rápido<br> e em questão de pouco tempo, <br>consigo ser um dos melhores na função que estou designado</li>
+                    
+                </ul>
                 
-                <li>Inteligente</li>
-                <li>Forte</li>
-                <li>Carismático</li>
-                <li>Tranquilo</li>
-                <li>ágil</li>
-            </ul>
-            <a href="#" class="back-button" onclick="history.back()">Voltar</a>
-            </p>
+                </p>
+                <button class="flip-button" onclick="flipCard()">Mensagens</button>
+                <img  class="pixelrobin" src="icons/pixelrobin.gif" alt="pixel-art-titans">
+    
+            </section>
+          </div>
 
-            <img  class="pixelrobin" src="icons/pixelrobin.gif" alt="pixel-art-titans">
+          <div class="flip-card-back">
+            <section class= "primeiro" id="primeirogui">
+                <img class="logo" id="robinlogo" src="icons/RobinLogo.png">
+            </section>
+            <div class="linha" id="linhagui">
+            </div>
+            <section class="segundo">
+                <h1 class="bemvindo">SEJA BEM VINDO</h1>
+                <h1 class="nome" id="nomegui">GUILHERME</h1>
+                <p>Um espírito de liderança capaz de garantir a segurança e bom humor da equipe .
+                <h2>Habilidades</h2>
+                <ul>
+                    
+                    <li>Inteligente</li>
+                    <li>Forte</li>
+                    <li>Carismático</li>
+                    <li>Tranquilo</li>
+                    <li>ágil</li>
+                </ul>
+                <a href="#" class="back-button" onclick="history.back()">Voltar</a>
+                <button class="flip-button" onclick="flipCard()">Flip Card</button>
+                </p>
+    
+                <img  class="pixelrobin" src="icons/pixelrobin.gif" alt="pixel-art-titans">
+    
+            </section>
+          </div>
+          
 
-        </section>
+        </div>
     </main>
 
     <div id="loader">
@@ -45,6 +87,13 @@
              </div>
         </div>
     </div>
+
+    <script>
+        function flipCard() {
+          var card = document.querySelector('.flip-card');
+          card.classList.toggle('flipped');
+        }
+    </script>
 
     <script>
         // Função para ocultar a tela de carregamento e exibir a página principal após 3 segundos
