@@ -42,7 +42,7 @@
 
                 </p>
 
-                <button class="flip-button" onclick="flipCard()">Mensagens</button>
+                <button class="flip-button" onclick="flipCard()"><img src="icons/controlemote.png" id="redctrl"> Ir para a central</button>
     
                 <img  class="pixelmutano" src="icons/pixelmutano.gif" alt="pixel-art-titans">
     
@@ -50,32 +50,29 @@
           </div>
 
           <div class="flip-card-back">
-            <section class= "primeiro" id="primeirogui">
-                <img class="logo" id="robinlogo" src="icons/RobinLogo.png">
-            </section>
-            <div class="linha" id="linhagui">
-            </div>
-            <section class="segundo">
-                <div class="topo">
-                    <a href="#" class="back-button" onclick="history.back()">Voltar</a>
-                    <button class="flip-button" onclick="flipCard()">Flip Card</button>
+            <section class= "primeiro" id="msgheader">
+                <div id="centraltt">
+                <img class="emotecom" src="icons/controlemote.png" alt="notifications">
+                <h1 class="central" >CENTRAL</h1>
                 </div>
-                <h1 class="bemvindo">SEJA BEM VINDO</h1>
-                <h1 class="nome" id="nomegui">GUILHERME</h1>
-                <p>Um espírito de liderança capaz de garantir a segurança e bom humor da equipe .
-                <h2>Habilidades</h2>
-                <ul>
-                    
-                    <li>Inteligente</li>
-                    <li>Forte</li>
-                    <li>Carismático</li>
-                    <li>Tranquilo</li>
-                    <li>ágil</li>
-                </ul>
-                </p>
-    
-                <img  class="pixelrobin" src="icons/pixelrobin.gif" alt="pixel-art-titans">
-    
+            </section>
+            <div class="linha" id="linhamsg">
+            </div>
+            <section class="segundo" id="msgseg">
+                <div class="chat">
+                    <div class="bola">
+                        <img class="kficon" src="icons/kidflashperfil.png" alt="KidFlash">
+                    </div>
+                    <div class="balao-fala">
+                      <p class="insta"> Você recebeu uma mensagem do <br> criador...<em>-Kid Flash</em></p> 
+                    </div>
+                    <div class="botoes">
+                    <button class="config" class="flip-button" onclick="flipCard()">Perfil</button>
+                    <div class="red">1</div>
+                    <button class="config" onclick="carta()">Notificações</button>
+                    <button class="config" href="#" class="back-button" onclick="history.back()">Sair</button>
+                    </div>
+                </div>
             </section>
           </div>
           
@@ -91,6 +88,12 @@
              </div>
         </div>
     </div>
+
+    <script>
+        function carta() {
+            window.location.href = 'lapis.html';
+        }
+    </script>
 
     <script>
         function flipCard() {

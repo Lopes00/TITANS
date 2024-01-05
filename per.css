@@ -185,6 +185,8 @@ p {
 h2 {
     width: 287px;
     margin: 25 0 4 0;
+    font-family: 'Bitter';
+    
 }
 
 ul {
@@ -219,9 +221,9 @@ li {
 
 .pixelraven {
     position: absolute;
-    width: 120px;
-    margin-right: 10px;
-    margin-top: 20px;
+    width: 100px;
+    right: 10px;
+    top: 170px;
 }
 
 .pixelrobin {
@@ -283,20 +285,30 @@ li {
 
 .flip-button {
     width: 200px;
-    height: 60px;
+    height: 40px;
     background-color: #e2e0e0;
     border: 2px solid #00000083;
-    box-shadow: 5px 5px 2px #000000;
+    box-shadow: -13px 0 20px #c2e403;
     cursor: pointer;
-    margin-top: 50px;   
-    border-radius: 32px;
+    margin-top: 50px;
+    margin-left: 130px;
+    border-radius: 3px;
+    color: #000000;
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    
 
     font-family: 'Bitter';
     font-style: normal;
-    font-size: 20px;
+    font-size: 17px;
+    text-align: center;
 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
 
- 
 }
 
 .topo {
@@ -318,10 +330,216 @@ li {
     width: 35px;
 }
 
-#msgi{
+#msgi {
     margin-top: 20px;
 }
 
-#msgt{
+#msgt {
     margin-top: 20px;
+}
+
+#msgheader {
+    background-color: azure;
+}
+
+#centraltt {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.emotecom {
+    width: 50px;
+    height: 57px;
+}
+
+.central {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: 'TTG';
+    font-style: normal;
+    font-size: 35px;
+}
+
+#linhamsg {
+    background-color: rgb(156, 156, 19);
+}
+
+#msgseg {
+    background-color: #00acee;
+
+}
+
+.chat {
+    width: 95%;
+    height: 88%;
+    border: 1px solid azure;
+    margin-top: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.config {
+    width: 200px;
+    height: 60px;
+    background-color: #00acee;
+    border: 2px solid azure;
+    box-shadow: 8px 6px 1px #149ed4;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+
+    font-family: 'Bitter';
+    font-style: normal;
+    font-size: 20px;
+    color: white;
+}
+
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.bola{
+    background-color: rgb(222, 241, 240);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    top: 170px;
+    left: 30px;
+    
+}
+
+.kficon{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid azure;
+}
+
+.balao-fala {
+    position: absolute;
+    width: 70%;
+    height: 6% ;
+    border-radius: 50px;
+    background-color: #85b8dd; /* Cor de fundo do balão */
+    top: 160px;
+    left: 70px;
+    display: flex;
+    justify-content: center;
+    border: 0.5px solid azure;
+    
+    
+}
+
+.insta{
+    width:auto;
+    font-size: 12px;
+    line-height: 15px;
+    font-family: 'Bitter';
+    margin-top: 5px;
+    color: white;
+}
+
+em{
+    margin-left: 70px;
+}
+
+#redctrl{
+    width: 30px;
+    height: 30px;
+}
+
+.red{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(211, 41, 41);
+    position: absolute;
+    text-align: center;
+    color: white;
+    top: 340px;
+    right: 60px;
+
+}
+
+#primeirocaro{
+background-color: #000000;
+}
+
+#linhacaro{
+background-color: rgb(124, 116, 4);
+}
+
+#segundocaro{
+    background-color: #ffffff;
+}
+
+.Tpremium{
+    height: 70px;
+}
+
+
+.redacao{
+    width: 90%;
+    height: 80%;
+    margin-top: 20px;
+}
+
+#msglp{
+    margin-top: 20px;
+}
+
+#txtlp{
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    color: rgb(26, 24, 24);
+    text-align: justify;
+}
+
+
+#primeirokid{
+    background-color: #dbdd3c;
+}
+
+#linhakid{
+    background-color: #7c1717;
+}
+
+#kidlogo{
+    height: 90px;
+}
+
+#nomelopes{
+    color:#dbdd3c ;
+    font-size: 30px;
+}
+
+#manflash{
+    position: absolute;
+    top: 167px;
+    right: 10px;
+}
+
+.kidcard{
+    box-shadow: -13px 0 20px  #7c1717 ;
+}
+
+#kidred{
+    width: 50px;
+  
 }
