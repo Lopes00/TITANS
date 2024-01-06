@@ -42,7 +42,7 @@
                 
                 
                 </p>
-                <button class="flip-button" onclick="flipCard()" id="msgi"><img src="icons/controlemote.png" id="redctrl" > Ir para a central</button>
+                <button class="flip-button" onclick="flipCard()" id="msgi"><img src="icons/controlemote.png" id="redctrl" > Ir para central</button>
                 <img class="pixelestelar" src="icons/pixelestelar.gif" alt="pixel-art-titans">
     
             </section>
@@ -68,7 +68,8 @@
                     <div class="botoes">
                     <button class="config" class="flip-button" onclick="flipCard()">Perfil</button>
                     <div class="red">1</div>
-                    <button class="config">Notificações</button>
+                    <button class="config" onclick="carta()">Notificações</button>
+                    <button class="config" onclick="flow()">Para vocês🌹</button>
                     <button class="config" href="#" class="back-button" onclick="history.back()">Sair</button>
                     </div>
                 </div>
@@ -86,6 +87,16 @@
              </div>
         </div>
     </div>
+
+    <script>
+        function carta() {
+            window.location.href = 'lapis.html';
+        }
+
+        function flow(){
+            window.location.href = 'flor/buqueyellow.html';
+        }
+    </script>
 
     <script>
         function flipCard() {
