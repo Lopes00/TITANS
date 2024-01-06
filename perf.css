@@ -471,7 +471,7 @@ em{
     position: absolute;
     text-align: center;
     color: white;
-    top: 340px;
+    top: 300px;
     right: 60px;
 
 }
@@ -525,7 +525,7 @@ background-color: rgb(124, 116, 4);
 }
 
 #nomelopes{
-    color:#dbdd3c ;
+    color: #7c1717 ;
     font-size: 30px;
 }
 
